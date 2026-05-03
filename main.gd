@@ -1,4 +1,5 @@
+# main.gd
 extends Node
 
 func _ready() -> void:
-	get_tree().change_scene_to_file("res://screens/editor_screen/EditorScreen.tscn")
+	get_tree().change_scene_to_file.call_deferred("res://screens/editor_screen/EditorScreen.tscn")

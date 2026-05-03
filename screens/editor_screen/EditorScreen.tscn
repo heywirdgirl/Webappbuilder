@@ -1,46 +1,47 @@
-[gd_scene format=3 uid="uid://ncptkbfv8mya"]
+[gd_scene load_steps=2 format=3 uid="uid://ncptkbfv8mya"]
 
-[ext_resource type="Script" uid="uid://b57kxyl35kq0p" path="res://screens/editor_screen/EditorScreen.gd" id="1_412ec"]
+[ext_resource type="Script" path="res://screens/editor_screen/EditorScreen.gd" id="1_412ec"]
 
-[node name="EditorScreen" type="Control" unique_id=343210936]
+[node name="EditorScreen" type="Control"]
 layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_412ec")
 
-[node name="MainLayout" type="VBoxContainer" parent="." unique_id=25899506]
+[node name="MainLayout" type="VBoxContainer" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/separation = 0
 
-[node name="TopBar" type="PanelContainer" parent="MainLayout" unique_id=1843753205]
+[node name="TopBar" type="PanelContainer" parent="MainLayout"]
 custom_minimum_size = Vector2(0, 52)
 layout_mode = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="MainLayout/TopBar" unique_id=498176324]
+[node name="HBoxContainer" type="HBoxContainer" parent="MainLayout/TopBar"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="MainLayout/TopBar/HBoxContainer" unique_id=726764698]
+[node name="Label" type="Label" parent="MainLayout/TopBar/HBoxContainer"]
 layout_mode = 2
+text = "NextGen"
 
-[node name="HBoxContainer" type="HBoxContainer" parent="MainLayout/TopBar/HBoxContainer" unique_id=733872009]
-layout_mode = 2
-
-[node name="WorkArea" type="HBoxContainer" parent="MainLayout" unique_id=195737332]
+[node name="WorkArea" type="HBoxContainer" parent="MainLayout"]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="Canvas" type="Panel" parent="MainLayout/WorkArea" unique_id=34348349]
+[node name="Canvas" type="Panel" parent="MainLayout/WorkArea"]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="BottomPalette" type="PanelContainer" parent="MainLayout" unique_id=495338178]
+[node name="BottomPalette" type="PanelContainer" parent="MainLayout"]
 custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="MainLayout/BottomPalette" unique_id=828503179]
+[node name="HBoxContainer" type="HBoxContainer" parent="MainLayout/BottomPalette"]
 layout_mode = 2
