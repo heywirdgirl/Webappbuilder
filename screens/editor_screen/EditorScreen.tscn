@@ -1,10 +1,13 @@
 [gd_scene format=3 uid="uid://ncptkbfv8mya"]
 
+[ext_resource type="Script" uid="uid://b57kxyl35kq0p" path="res://screens/editor_screen/EditorScreen.gd" id="1_412ec"]
+
 [node name="EditorScreen" type="Control" unique_id=343210936]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+script = ExtResource("1_412ec")
 
 [node name="MainLayout" type="VBoxContainer" parent="." unique_id=25899506]
 layout_mode = 1
