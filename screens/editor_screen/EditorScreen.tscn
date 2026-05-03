@@ -1,3 +1,43 @@
-[gd_scene load_steps=1 format=2]
+[gd_scene format=3 uid="uid://ncptkbfv8mya"]
 
-[node name="EditorScreen" type="Control"]
+[node name="EditorScreen" type="Control" unique_id=343210936]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MainLayout" type="VBoxContainer" parent="." unique_id=25899506]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TopBar" type="PanelContainer" parent="MainLayout" unique_id=1843753205]
+custom_minimum_size = Vector2(0, 52)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MainLayout/TopBar" unique_id=498176324]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MainLayout/TopBar/HBoxContainer" unique_id=726764698]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MainLayout/TopBar/HBoxContainer" unique_id=733872009]
+layout_mode = 2
+
+[node name="WorkArea" type="HBoxContainer" parent="MainLayout" unique_id=195737332]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Canvas" type="Panel" parent="MainLayout/WorkArea" unique_id=34348349]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="BottomPalette" type="PanelContainer" parent="MainLayout" unique_id=495338178]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MainLayout/BottomPalette" unique_id=828503179]
+layout_mode = 2
